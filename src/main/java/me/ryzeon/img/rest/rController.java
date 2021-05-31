@@ -1,5 +1,6 @@
 package me.ryzeon.img.rest;
 
+import com.google.gson.JsonObject;
 import me.ryzeon.img.Lang;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -65,8 +66,9 @@ public class rController {
             BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(crateImgFile(fileName)));
             stream.write(bytes);
             stream.close();
-            JSONObject
-            return new ResponseEntity<>(filename, HttpStatus.OK);
+            JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("url", Lang.DOMAIN.getValue() + "/img/" + fileName);
+            return new ResponseEntity<>(jsonObject, HttpStatus.OK);
 
         } catch (Exception e) {
             e.printStackTrace();
