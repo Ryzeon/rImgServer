@@ -1,5 +1,6 @@
 package me.ryzeon.img.start;
 
+import me.ryzeon.img.Lang;
 import me.ryzeon.img.rImgServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,10 +17,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Start {
 
     public static void main(String[] args) {
-        System.getProperties().put("server.port", "6565");
+        System.getProperties().put("server.port", Lang.PORT.getValue());
         SpringApplication.run(Start.class, args);
 
         rImgServer.getInstance().start();
-        rImgServer.logger("Img Server started on 6565");
+        rImgServer.logger("Img Server started on http://localhost:" + Lang.PORT.getValue());
     }
 }
