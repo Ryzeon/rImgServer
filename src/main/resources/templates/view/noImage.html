@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <title th:text="${pageTitle}"></title>
+
+    <meta name="title" th:attr="content=${pageTitle}"/>
+    <meta name="description" th:attr="content=${description}"/>
+    <meta name="theme-color" th:attr="content=${color}"/>
+    <meta name="msapplication-TileColor" th:attr="content=${color}"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta name="og:url" th:attr="content=${pageDomain}"/>
+    <meta name="og:title" th:attr="content=${pageTitle}"/>
+    <meta name="og:description" th:attr="content=${description}"/>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" th:attr="content=${pageDomain}"/>
+    <meta name="twitter:title" th:attr="content=${pageTitle}"/>
+    <meta name="twitter:description" th:attr="content=${description}"/>
+
+</head>
+<body>
+<h1 th:text="${name} + ' Couldn''t found"></h1>
+</body>
+</html>
