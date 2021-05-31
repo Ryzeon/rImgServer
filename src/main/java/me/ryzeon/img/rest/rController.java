@@ -1,7 +1,7 @@
 package me.ryzeon.img.rest;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by Ryzeon
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Github:  github.ryzeon.me
  */
 
-@RestController
+@Controller
 public class rController {
 
     @GetMapping("/")
