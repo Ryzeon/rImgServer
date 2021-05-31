@@ -15,19 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class rController {
 
-    @GetMapping("/api/check/version")
-    public String getVersion() {
-        return "1.0";
-    }
-
     @GetMapping(value = "/")
     public String index() {
-        System.out.println("index pe xd");
-        return "KAJAAJ TU MAMA ES PUTA XD";
-    }
-
-    @GetMapping(value = "/a")
-    public String indexa() {
         System.out.println("index pe xd");
         return "KAJAAJ TU MAMA ES PUTA XD";
     }
