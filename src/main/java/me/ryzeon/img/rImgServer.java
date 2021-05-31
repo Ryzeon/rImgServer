@@ -28,7 +28,7 @@ public class rImgServer {
      * @apiNote #Logger msg
      */
     public static void logger(String message) {
-
+        System.out.println("[rImgServer] " + message);
     }
 
     public static rImgServer getInstance() {

@@ -20,5 +20,6 @@ public class Start {
         SpringApplication.run(Start.class, args);
 
         rImgServer.getInstance().start();
+        rImgServer.logger("Img Server started on 6565");
     }
 }
