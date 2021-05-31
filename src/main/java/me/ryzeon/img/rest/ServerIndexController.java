@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ServerIndexController {
 
-    @GetMapping("/")
+    @GetMapping(value = "/")
     public String index() {
         System.out.println("index pe xd");
         return "KAJAAJ TU MAMA ES PUTA XD";
