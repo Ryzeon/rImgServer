@@ -17,7 +17,7 @@ public class rPageErrorController implements ErrorController {
 
     @RequestMapping("/404")
     public String handleError() {
-        return "EROR PE CONCHATUMADCRE";
+        return "404";
     }
 
     @Override
