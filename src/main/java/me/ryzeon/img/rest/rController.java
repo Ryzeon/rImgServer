@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-public class ServerIndexController {
+public class rController {
 
     @GetMapping("/api/check/version")
     public String getVersion() {
