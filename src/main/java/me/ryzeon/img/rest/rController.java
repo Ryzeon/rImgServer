@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Github:  github.ryzeon.me
  */
 
-@RestController
+@Controller
 public class rController {
 
     @GetMapping(value = "/")
