@@ -69,7 +69,7 @@ public class rController {
             stream.close();
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("url", Lang.DOMAIN.getValue() + "/img/" + fileName);
-            return new ResponseEntity<>(jsonObject, HttpStatus.OK);
+            return new ResponseEntity<>(jsonObject.toString(), HttpStatus.OK);
 
         } catch (Exception e) {
             e.printStackTrace();
