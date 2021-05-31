@@ -3,8 +3,8 @@ package me.ryzeon.img.rest;
 import me.ryzeon.img.Lang;
 import me.ryzeon.img.rImgServer;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
 
 /**
@@ -18,6 +18,10 @@ import org.springframework.ui.Model;
 @Controller
 public class rController {
 
+    /**
+     * @param model set a model to can be use html template
+     * @return index.html
+     */
     @GetMapping("/")
     public String index(Model model) {
         rImgServer.logger("INDEX P");
