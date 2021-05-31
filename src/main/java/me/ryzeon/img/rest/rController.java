@@ -1,5 +1,6 @@
 package me.ryzeon.img.rest;
 
+import me.ryzeon.img.Lang;
 import me.ryzeon.img.rImgServer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +21,7 @@ public class rController {
     @GetMapping("/")
     public String index(Model model) {
         rImgServer.logger("INDEX P");
-        model.addAttribute("title", )
-        return "index.html";
+        model.addAttribute("title", Lang.TITLE.getValue());
+        return "index";
     }
 }
