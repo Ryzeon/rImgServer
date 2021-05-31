@@ -1,5 +1,16 @@
 package me.ryzeon.img;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.HandlerExecutionChain;
+import org.springframework.web.util.ContentCachingRequestWrapper;
+import org.springframework.web.util.ContentCachingResponseWrapper;
+import org.springframework.web.util.WebUtils;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * Created by Ryzeon
  * Project: rImgServer
@@ -50,8 +61,7 @@ public class LoggableDispatcherServlet extends DispatcherServlet {
                 int length = Math.min(buf.length, 5120);
                 try {
                     return new String(buf, 0, length, wrapper.getCharacterEncoding());
-                }
-                catch (UnsupportedEncodingException ex) {
+                } catch (UnsupportedEncodingException ex) {
                     // NOOP
                 }
             }
