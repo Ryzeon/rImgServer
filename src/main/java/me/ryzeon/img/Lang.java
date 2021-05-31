@@ -15,7 +15,7 @@ public enum Lang {
 
     TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
     DESCRIPTION("#GAAAAA ARMY"),
-    COLOR(""),
+    COLOR("#00FFAA"),
     PORT("5656");
 
     @Getter
