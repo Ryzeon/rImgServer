@@ -8,8 +8,8 @@
     <!-- Primary Meta Tags -->
     <title th:text="${pageTitle}"></title>
 
-    <meta name="title" content= >
-    <meta name="description" content="<%= process.env.DESCRIPTION %>">
+    <meta name="title" th:attr="content=${pageTitle}" />
+    <meta name="description" th:attr="content=${description}" />
     <meta name="theme-color" content="<%= process.env.COLOR %>">
     <meta name="msapplication-TileColor" content="<%= process.env.COLOR %>">
 

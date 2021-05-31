@@ -14,14 +14,15 @@ import java.beans.ConstructorProperties;
 public enum Lang {
 
     TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
-    PORT("5656")
-    ;
+    DESCRIPTION("#GAAAAA ARMY"),
+    COLOR(""),
+    PORT("5656");
 
     @Getter
     private final String value;
 
     @ConstructorProperties({"value"})
-    Lang(String value){
+    Lang(String value) {
         this.value = value;
     }
 }
