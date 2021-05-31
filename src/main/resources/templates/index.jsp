@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>th:text=${title}</title>
-<!--    <meta name="title" content=${title}>-->
-<!--    <meta name="description" content="<%= process.env.DESCRIPTION %>">-->
-<!--    <meta name="theme-color" content="<%= process.env.COLOR %>">-->
-<!--    <meta name="msapplication-TileColor" content="<%= process.env.COLOR %>">-->
+    <title></title>
+    <!--    <meta name="title" content=${title}>-->
+    <!--    <meta name="description" content="<%= process.env.DESCRIPTION %>">-->
+    <!--    <meta name="theme-color" content="<%= process.env.COLOR %>">-->
+    <!--    <meta name="msapplication-TileColor" content="<%= process.env.COLOR %>">-->
 
-<!--    &lt;!&ndash; Open Graph / Facebook &ndash;&gt;-->
-<!--    <meta property="og:type" content="website">-->
-<!--    <meta property="og:url" content="<%= process.env.DOMAIN %>">-->
-<!--    <meta property="og:title" content="<%= process.env.TITLE %>">-->
-<!--    <meta property="og:description" content="<%= process.env.DESCRIPTION %>">-->
+    <!--    &lt;!&ndash; Open Graph / Facebook &ndash;&gt;-->
+    <!--    <meta property="og:type" content="website">-->
+    <!--    <meta property="og:url" content="<%= process.env.DOMAIN %>">-->
+    <!--    <meta property="og:title" content="<%= process.env.TITLE %>">-->
+    <!--    <meta property="og:description" content="<%= process.env.DESCRIPTION %>">-->
 
-<!--    &lt;!&ndash; Twitter &ndash;&gt;-->
-<!--    <meta property="twitter:card" content="summary_large_image">-->
-<!--    <meta property="twitter:url" content="<%= process.env.DOMAIN %>">-->
-<!--    <meta property="twitter:title" content="<%= process.env.TITLE %>">-->
-<!--    <meta property="twitter:description" content="<%= process.env.DESCRIPTION %>">-->
+    <!--    &lt;!&ndash; Twitter &ndash;&gt;-->
+    <!--    <meta property="twitter:card" content="summary_large_image">-->
+    <!--    <meta property="twitter:url" content="<%= process.env.DOMAIN %>">-->
+    <!--    <meta property="twitter:title" content="<%= process.env.TITLE %>">-->
+    <!--    <meta property="twitter:description" content="<%= process.env.DESCRIPTION %>">-->
 
     <style>
         body {
@@ -78,8 +78,10 @@
 </head>
 <body>
 <div class="container">
-    <h1><%= process.env.TITLE || '📸 Image Web Server' %></h1>
-    <h2><%= process.env.DESCRIPTION %></h2>
+    <h1><%= process.env.TITLE || '📸 Image Web Server' %>
+    </h1>
+    <h2><%= process.env.DESCRIPTION %>
+    </h2>
 </div>
 <footer class="footer">
     <p>Made by <a href="https://github.com/N0ahMC/ImageWebServer"><b>N0ahMC</b></a></p>
