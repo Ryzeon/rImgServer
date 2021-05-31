@@ -50,6 +50,7 @@ public class rController {
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public ResponseEntity<?> upload(HttpServletRequest request) {
+        System.out.println("GAAAAAA");
         String key = request.getHeader("key");
         if (!key.equals(Lang.API_KEY.getValue())) {
             return new ResponseEntity<>("Invalid Key", HttpStatus.BAD_REQUEST);
