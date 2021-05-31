@@ -2,7 +2,6 @@ package me.ryzeon.img;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Created by Ryzeon
@@ -17,7 +16,6 @@ import org.springframework.context.annotation.ComponentScan;
  * Recoded on java.
  */
 
-@ComponentScan
 @SpringBootApplication
 public class Start {
 
