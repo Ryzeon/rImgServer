@@ -17,7 +17,7 @@ public class rPageErrorController implements ErrorController {
 
     @RequestMapping("/404")
     public String handleError() {
-        return "404";
+        return "error/404";
     }
 
     @Override
