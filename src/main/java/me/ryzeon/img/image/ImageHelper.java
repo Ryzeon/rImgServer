@@ -16,16 +16,22 @@ import java.util.Random;
 public class ImageHelper {
 
     private static final Random random = new Random();
+
     public static int getRandomId() {
         return random.nextInt(848484);
     }
 
-    public static File findImageByName(String fileName){
-        File file = new File("img/");
-        for (File a : file.geta)
+    public static File findImageByName(String fileName) {
+        File imagesFiles = new File("img/");
+        for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
+            if (file.getName().contains(".png")) continue;
+            String name = file.getName().replace(".png", "");
+            if (name.equals(fileName)) return file;
+        }
+        return null;
     }
 
-    public  static File crateImgFile(String fileName) {
+    public static File crateImgFile(String fileName) {
         File file = new File("img/" + fileName);
         if (!file.exists()) {
             try {
