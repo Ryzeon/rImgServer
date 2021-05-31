@@ -69,6 +69,7 @@ public class rController {
             stream.close();
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("url", Lang.DOMAIN.getValue() + "/img/" + fileName);
+            System.out.println("RESPONDIENDO XD");
             return new ResponseEntity<>(jsonObject.toString(), HttpStatus.OK);
 
         } catch (Exception e) {
