@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class rController {
 
-    @GetMapping("/upload")
+    @GetMapping("/upload", POST)
     public String upload() {
         return "NOSE K PONER CA PE XD";
     }
