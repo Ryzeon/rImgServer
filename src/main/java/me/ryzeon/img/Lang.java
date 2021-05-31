@@ -13,7 +13,7 @@ import java.beans.ConstructorProperties;
  */
 public enum Lang {
 
-    TITLE(""),
+    TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
     PORT("5656")
     ;
 
