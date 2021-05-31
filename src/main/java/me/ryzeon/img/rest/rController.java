@@ -16,6 +16,7 @@ public class rController {
 
     @GetMapping("/")
     public String index() {
+        System.out.println("index pe xd");
         return "KAJAAJ TU MAMA ES PUTA XD";
     }
 }
