@@ -1,7 +1,7 @@
 package me.ryzeon.img.rest;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Created by Ryzeon
@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class rPageErrorController implements ErrorController {
 
-    @RestController
-    
+    @RequestMapping("/error")
 
     @Override
     public String getErrorPath() {
