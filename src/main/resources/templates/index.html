@@ -25,7 +25,57 @@
     <meta property="twitter:title" content="<%= process.env.TITLE %>">
     <meta property="twitter:description" content="<%= process.env.DESCRIPTION %>">
 
-    <style></style>
+    <style>
+        body {
+            background-color: #121212;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            font-weight: 700;
+            opacity: 0.87;
+        }
+
+        h2 {
+            color: white;
+            font-style: italic;
+            font-size: 30px;
+            opacity: 0.60;
+        }
+
+        .container {
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            opacity: 0.60;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: #cccccc;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
