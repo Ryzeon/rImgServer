@@ -8,5 +8,5 @@ package me.ryzeon.img.image;
  * Github:  github.ryzeon.me
  */
 
-public class ImagenHelper {
+public class ImageHelper {
 }
