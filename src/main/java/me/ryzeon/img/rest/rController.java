@@ -4,6 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 
 /**
  * Created by Ryzeon
@@ -17,8 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class rController {
 
     @PostMapping("/upload")
-    public String upload(String a) {
-        System.out.println(a);
+    public String upload(HttpServletRequest request) {
+        System.out.println("REQUEST :V");
+        System.out.println(request);
         return "NOSE K PONER CA PE XD";
     }
 }
