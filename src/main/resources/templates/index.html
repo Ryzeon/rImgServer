@@ -15,9 +15,9 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="<%= process.env.DOMAIN %>">
-    <meta property="og:title" content="<%= process.env.TITLE %>">
-    <meta property="og:description" content="<%= process.env.DESCRIPTION %>">
+    <meta name="og:url" th:attr="content=${pageDomain}"/>
+    <meta name="og:title" th:attr="content=${pageTitle}"/>
+    <meta name="og:description" th:attr="content=${description}"/>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">

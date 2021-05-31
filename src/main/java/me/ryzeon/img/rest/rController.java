@@ -24,6 +24,7 @@ public class rController {
         model.addAttribute("pageTitle", Lang.TITLE.getValue());
         model.addAttribute("description", Lang.DESCRIPTION.getValue());
         model.addAttribute("color", Lang.COLOR.getValue());
+        model.addAttribute("pageDomain", Lang.DOMAIN.getValue());
         System.out.println(model);
         return "index";
     }

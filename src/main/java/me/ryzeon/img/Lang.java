@@ -14,6 +14,7 @@ import java.beans.ConstructorProperties;
 public enum Lang {
 
     TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
+    DOMAIN("the-best-peruvian-is.ryzeon.me"),
     DESCRIPTION("#GAAAAA ARMY"),
     COLOR("#00FFAA"),
     PORT("5656");
