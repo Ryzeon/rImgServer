@@ -24,7 +24,7 @@ public class ImageHelper {
     public static File findImageByName(String fileName) {
         File imagesFiles = new File("img/");
         for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
-            if (file.getName().contains(".png")) continue;
+            if (!file.getName().contains(".png")) continue;
             String name = file.getName().replace(".png", "");
             if (name.equals(fileName)) return file;
         }
