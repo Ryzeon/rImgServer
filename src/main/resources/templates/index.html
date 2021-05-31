@@ -21,9 +21,9 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="<%= process.env.DOMAIN %>">
-    <meta property="twitter:title" content="<%= process.env.TITLE %>">
-    <meta property="twitter:description" content="<%= process.env.DESCRIPTION %>">
+    <meta name="twitter:url" th:attr="content=${pageDomain}"/>
+    <meta name="twitter:title" th:attr="content=${pageTitle}"/>
+    <meta name="twitter:description" th:attr="content=${description}"/>
 
     <style>
         body {
