@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title></title>
+    <title>${pagTitle}</title>
     <!--    <meta name="title" content=${title}>-->
     <!--    <meta name="description" content="<%= process.env.DESCRIPTION %>">-->
     <!--    <meta name="theme-color" content="<%= process.env.COLOR %>">-->
