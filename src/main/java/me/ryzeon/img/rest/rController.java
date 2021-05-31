@@ -1,5 +1,7 @@
 package me.ryzeon.img.rest;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * Created by Ryzeon
  * Project: rImgServer
@@ -8,6 +10,6 @@ package me.ryzeon.img.rest;
  * Github:  github.ryzeon.me
  */
 
-@Rest
-public class RestController {
+@RestController
+public class rController {
 }
