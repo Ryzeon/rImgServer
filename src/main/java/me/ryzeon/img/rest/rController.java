@@ -1,10 +1,7 @@
 package me.ryzeon.img.rest;
 
-import me.ryzeon.img.Lang;
-import me.ryzeon.img.rImgServer;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 /**
@@ -15,24 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Github:  github.ryzeon.me
  */
 
-@Controller
+@RestController
 public class rController {
 
-    /**
-     * @param model set a model to can be use html template
-     * @return index.html
-     */
-    @GetMapping("/")
-    public String index(Model model) {
-        rImgServer.logger("INDEX P");
-        model.addAttribute("pageTitle", Lang.TITLE.getValue());
-        model.addAttribute("description", Lang.DESCRIPTION.getValue());
-        model.addAttribute("color", Lang.COLOR.getValue());
-        model.addAttribute("pageDomain", Lang.DOMAIN.getValue());
-        System.out.println(model);
-        return "index";
-    }
-
     @GetMapping("/upload")
-    p
+    public String upload() {
+        return "NOSE K PONER CA PE XD";
+    }
 }
