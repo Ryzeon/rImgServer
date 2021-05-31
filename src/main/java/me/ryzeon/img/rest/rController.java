@@ -18,6 +18,6 @@ public class rController {
     @GetMapping(value = "/")
     public String index() {
         System.out.println("index pe xd");
-        return ;
+        return "index";
     }
 }
