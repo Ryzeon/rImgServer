@@ -22,6 +22,6 @@ public class rPageErrorController implements ErrorController {
 
     @Override
     public String getErrorPath() {
-        return "GAAAAAAAAA";
+        return "404";
     }
 }
