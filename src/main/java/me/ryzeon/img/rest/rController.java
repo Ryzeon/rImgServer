@@ -1,6 +1,7 @@
 package me.ryzeon.img.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class rController {
 
-    @GetMapping("/upload", POST)
+    @PostMapping("/upload")
     public String upload() {
         return "NOSE K PONER CA PE XD";
     }
