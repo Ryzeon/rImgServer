@@ -1,7 +1,5 @@
-package me.ryzeon.img.start;
+package me.ryzeon.img;
 
-import me.ryzeon.img.Lang;
-import me.ryzeon.img.rImgServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
