@@ -1,5 +1,10 @@
 package me.ryzeon.img.web;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
 /**
  * Created by Ryzeon
  * Project: rImgServer
@@ -8,5 +13,13 @@ package me.ryzeon.img.web;
  * Github:  github.ryzeon.me
  */
 
-public class WebAppConfig {
+@Configuration
+@EnableWebMvc
+public class WebAppConfig extends WebMvcConfigurerAdapter {
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addRedirectViewController("/", "index.html");
+    }
+
 }
