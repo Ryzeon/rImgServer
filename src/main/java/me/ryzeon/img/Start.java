@@ -23,7 +23,7 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 @SpringBootApplication
 public class Start {
 
-    @Bean(name ="templateResolver")
+    @Bean(name = "templateResolver")
     public ServletContextTemplateResolver getTemplateResolver() {
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
         templateResolver.setPrefix("/WEB-INF/templates/");
@@ -31,14 +31,16 @@ public class Start {
         templateResolver.setTemplateMode("XHTML");
         return templateResolver;
     }
-    @Bean(name ="templateEngine")
+
+    @Bean(name = "templateEngine")
     public SpringTemplateEngine getTemplateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(getTemplateResolver());
         return templateEngine;
     }
-    @Bean(name="viewResolver")
-    public ThymeleafViewResolver getViewResolver(){
+
+    @Bean(name = "viewResolver")
+    public ThymeleafViewResolver getViewResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(getTemplateEngine());
         return viewResolver;
