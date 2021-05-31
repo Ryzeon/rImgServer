@@ -14,5 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class rController {
 
-    @GetMapping("/";)
+    @GetMapping("/")
+    public String index() {
+        return "KAJAAJ TU MAMA ES PUTA XD";
+    }
 }
