@@ -22,7 +22,8 @@ public class rController {
     public String index(Model model) {
         rImgServer.logger("INDEX P");
         model.addAttribute("GAAAA", Lang.TITLE.getValue());
+        model.addAttribute("name", Lang.TITLE.getValue());
         System.out.println(model);
-        return "index";
+        return "name";
     }
 }
