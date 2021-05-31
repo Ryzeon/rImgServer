@@ -13,8 +13,7 @@ import java.beans.ConstructorProperties;
  */
 public enum Lang {
 
-    //TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
-    TITLE("null"),
+    TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
     DESCRIPTION("#GAAAAA ARMY"),
     COLOR("#00FFAA"),
     PORT("5656");
