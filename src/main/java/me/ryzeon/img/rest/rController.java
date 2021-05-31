@@ -3,8 +3,6 @@ package me.ryzeon.img.rest;
 import me.ryzeon.img.rImgServer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by Ryzeon
@@ -17,9 +15,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class rController {
 
-    @GetMapping(value = "/")
+    @GetMapping("/")
     public String index() {
         rImgServer.logger("INDEX P");
-       return "ola";
+        return "ola";
     }
 }
