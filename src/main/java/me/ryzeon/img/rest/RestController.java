@@ -8,5 +8,6 @@ package me.ryzeon.img.rest;
  * Github:  github.ryzeon.me
  */
 
+
 public class RestController {
 }
