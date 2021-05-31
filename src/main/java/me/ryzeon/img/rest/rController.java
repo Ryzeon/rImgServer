@@ -21,7 +21,7 @@ public class rController {
     @GetMapping("/")
     public String index(Model model) {
         rImgServer.logger("INDEX P");
-        model.addAttribute("pagTitle", Lang.TITLE.getValue());
+        model.addAttribute("GAAAA", Lang.TITLE.getValue());
         System.out.println(model);
         return "index";
     }
