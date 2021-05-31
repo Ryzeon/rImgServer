@@ -9,5 +9,5 @@ package me.ryzeon.img.image;
  */
 
 public class ImageHelper {
-    
+
 }
