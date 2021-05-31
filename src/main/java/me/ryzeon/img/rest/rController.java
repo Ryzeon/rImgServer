@@ -24,6 +24,6 @@ public class rController {
         model.addAttribute("GAAAA", Lang.TITLE.getValue());
         model.addAttribute("name", Lang.TITLE.getValue());
         System.out.println(model);
-        return "name";
+        return "hello";
     }
 }
