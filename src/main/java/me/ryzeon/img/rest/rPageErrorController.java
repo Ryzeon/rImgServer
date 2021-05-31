@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class rPageErrorController implements ErrorController {
 
-    @RequestMapping("/error")
+    @RequestMapping("/404")
     public String handleError() {
         return "EROR PE CONCHATUMADCRE";
     }
