@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 /**
- * 
+ * Credits: https://github.com/Noah1069/ImageWebServer
  */
 
 @SpringBootApplication
