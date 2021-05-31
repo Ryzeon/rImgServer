@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Github:  github.ryzeon.me
  */
 
-@Controller
+@RestController
 public class rController {
 
     @GetMapping(value = "/")
