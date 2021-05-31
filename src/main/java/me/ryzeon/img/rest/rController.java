@@ -50,7 +50,6 @@ public class rController {
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public ResponseEntity<?> upload(HttpServletRequest request) {
-        System.out.println("GAAAAAA");
         String key = request.getHeader("key");
         if (!key.equals(Lang.API_KEY.getValue())) {
             return new ResponseEntity<>("Invalid Key", HttpStatus.BAD_REQUEST);
@@ -67,10 +66,8 @@ public class rController {
             BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(crateImgFile(fileName)));
             stream.write(bytes);
             stream.close();
-            JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("url", Lang.DOMAIN.getValue() + "/img/" + fileName);
-            System.out.println("RESPONDIENDO XD");
-            return new ResponseEntity<>(jsonObject.toString(), HttpStatus.OK);
+            String url = Lang.DOMAIN.getValue() + "/img/" + fileName;
+            return new ResponseEntity<>(url, HttpStatus.OK);
 
         } catch (Exception e) {
             e.printStackTrace();
