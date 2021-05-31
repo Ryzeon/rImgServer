@@ -1,5 +1,7 @@
 package me.ryzeon.img.rest;
 
+import org.springframework.boot.web.servlet.error.ErrorController;
+
 /**
  * Created by Ryzeon
  * Project: rImgServer
@@ -8,5 +10,9 @@ package me.ryzeon.img.rest;
  * Github:  github.ryzeon.me
  */
 
-public class rPageErrorController {
+public class rPageErrorController implements ErrorController {
+    @Override
+    public String getErrorPath() {
+        return null;
+    }
 }
