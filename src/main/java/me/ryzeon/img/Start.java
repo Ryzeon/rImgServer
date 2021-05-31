@@ -11,6 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Github:  github.ryzeon.me
  */
 
+/**
+ * 
+ */
+
 @SpringBootApplication
 public class Start {
 
