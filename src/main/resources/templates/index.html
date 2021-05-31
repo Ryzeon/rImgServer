@@ -10,9 +10,9 @@
 
     <meta name="title" th:attr="content=${pageTitle}" />
     <meta name="description" th:attr="content=${description}" />
-    <meta name="theme-color" content="<%= process.env.COLOR %>">
-    <meta name="msapplication-TileColor" content="<%= process.env.COLOR %>">
-
+    <meta name="theme-color" th:attr="content=${color}" />
+    <meta name="msapplication-TileColor" th:attr="content=${color}" />
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= process.env.DOMAIN %>">
