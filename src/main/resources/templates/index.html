@@ -79,12 +79,12 @@
 </head>
 <body>
 <div class="container">
-    <h1 th:accept="${pageTitle} != 'null' ?${pageTitle} : '📸 Image Web Server'"></h1>
-    <h2><%= process.env.DESCRIPTION %>
-    </h2>
+    <h1 th:accept="${pageTitle}"></h1>
+    <h2 th:accept="${description}"></h2>
 </div>
 <footer class="footer">
     <p>Made by <a href="https://github.com/N0ahMC/ImageWebServer"><b>N0ahMC</b></a></p>
+    <p>Recoded in jva by <a href="https://github.com/Ryzeon"><b>Ryzeon</b></a></p>
 </footer>
 </body>
 </html>
