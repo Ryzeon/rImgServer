@@ -22,6 +22,10 @@ public class rImgServer {
     }
 
 
+    /**
+     *
+     * @param message   
+     */
     public static void logger(String message) {
 
     }
