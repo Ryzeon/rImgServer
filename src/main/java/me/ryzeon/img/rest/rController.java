@@ -3,6 +3,7 @@ package me.ryzeon.img.rest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by Ryzeon
@@ -16,8 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class rController {
 
     @GetMapping(value = "/")
-    public String index() {
-        System.out.println("index pe xd");
-        return "index";
+    public ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        return modelAndView;
     }
 }
