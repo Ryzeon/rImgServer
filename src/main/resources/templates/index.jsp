@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>th:text=${title}</title>
+    <title></title>
     <!--    <meta name="title" content=${title}>-->
     <!--    <meta name="description" content="<%= process.env.DESCRIPTION %>">-->
     <!--    <meta name="theme-color" content="<%= process.env.COLOR %>">-->
