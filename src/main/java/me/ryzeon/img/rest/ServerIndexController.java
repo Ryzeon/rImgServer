@@ -19,4 +19,10 @@ public class ServerIndexController {
         System.out.println("index pe xd");
         return "KAJAAJ TU MAMA ES PUTA XD";
     }
+
+    @GetMapping(value = "/a")
+    public String indexa() {
+        System.out.println("index pe xd");
+        return "KAJAAJ TU MAMA ES PUTA XD";
+    }
 }
