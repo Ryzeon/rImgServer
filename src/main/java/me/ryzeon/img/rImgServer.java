@@ -24,7 +24,8 @@ public class rImgServer {
 
     /**
      *
-     * @param message   
+     * @param message {@link String}
+     * @apiNote #Logger msg
      */
     public static void logger(String message) {
 
