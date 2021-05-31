@@ -32,4 +32,7 @@ public class rController {
         System.out.println(model);
         return "index";
     }
+
+    @GetMapping("/upload")
+    p
 }
