@@ -1,6 +1,5 @@
 package me.ryzeon.img.rest;
 
-import com.google.gson.JsonObject;
 import me.ryzeon.img.Lang;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
