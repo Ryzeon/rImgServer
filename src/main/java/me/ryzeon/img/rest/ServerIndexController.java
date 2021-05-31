@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ServerIndexController {
 
+    @GetMapping("/api/check/version")
+    public String getVersion() {
+        return "1.0";
+    }
+
     @GetMapping(value = "/")
     public String index() {
         System.out.println("index pe xd");
