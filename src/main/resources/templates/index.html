@@ -8,10 +8,10 @@
     <!-- Primary Meta Tags -->
     <title th:text="${pageTitle}"></title>
 
-    <meta name="title" th:attr="content=${pageTitle}" />
-    <meta name="description" th:attr="content=${description}" />
-    <meta name="theme-color" th:attr="content=${color}" />
-    <meta name="msapplication-TileColor" th:attr="content=${color}" />
+    <meta name="title" th:attr="content=${pageTitle}"/>
+    <meta name="description" th:attr="content=${description}"/>
+    <meta name="theme-color" th:attr="content=${color}"/>
+    <meta name="msapplication-TileColor" th:attr="content=${color}"/>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -79,7 +79,7 @@
 </head>
 <body>
 <div class="container">
-    <h1 th:accept="${pageTitle}"></h1>
+    <h1 th:accept="${pageTitle} != 'null' ?${pageTitle} : '📸 Image Web Server'"></h1>
     <h2><%= process.env.DESCRIPTION %>
     </h2>
 </div>
