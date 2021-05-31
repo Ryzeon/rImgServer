@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Github:  github.ryzeon.me
  */
 
-@Controller
+@RestController
 public class ServerIndexController {
 
     @GetMapping(value = "/")
