@@ -23,6 +23,6 @@ public class rController {
         rImgServer.logger("INDEX P");
         model.addAttribute("pageTitle", Lang.TITLE.getValue());
         System.out.println(model);
-        return "hello";
+        return "index";
     }
 }
