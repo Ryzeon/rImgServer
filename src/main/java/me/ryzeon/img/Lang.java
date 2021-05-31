@@ -13,6 +13,7 @@ import java.beans.ConstructorProperties;
  */
 public enum Lang {
 
+    TITLE(""),
     PORT("5656")
     ;
 

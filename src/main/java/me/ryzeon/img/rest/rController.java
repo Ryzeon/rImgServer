@@ -1,8 +1,10 @@
 package me.ryzeon.img.rest;
 
 import me.ryzeon.img.rImgServer;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+
 
 /**
  * Created by Ryzeon
@@ -12,12 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
  * Github:  github.ryzeon.me
  */
 
-@RestController
+@Controller
 public class rController {
 
     @GetMapping("/")
-    public String index() {
+    public String index(Model model) {
         rImgServer.logger("INDEX P");
+        model.addAttribute("title", )
         return "index.html";
     }
 }
