@@ -20,6 +20,11 @@ public class ImageHelper {
         return random.nextInt(848484);
     }
 
+    public static File findImageByName(String fileName){
+        File file = new File("img/");
+        for (File a : file.geta)
+    }
+
     public  static File crateImgFile(String fileName) {
         File file = new File("img/" + fileName);
         if (!file.exists()) {
