@@ -3,6 +3,7 @@ package me.ryzeon.img;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
@@ -21,6 +22,7 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
  */
 
 @SpringBootApplication
+@ComponentScan
 public class Start {
 
     @Bean(name = "templateResolver")
