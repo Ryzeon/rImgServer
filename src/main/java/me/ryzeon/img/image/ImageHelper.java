@@ -17,6 +17,10 @@ public class ImageHelper {
 
     private static final Random random = new Random();
 
+    private static String path() {
+        
+    }
+
     public static int getRandomId() {
         return random.nextInt(848484);
     }
