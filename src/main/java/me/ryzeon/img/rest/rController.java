@@ -13,10 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Random;
+
+import static me.ryzeon.img.image.ImageHelper.crateImgFile;
+import static me.ryzeon.img.image.ImageHelper.getRandomId;
 
 
 /**
@@ -31,22 +33,6 @@ import java.util.Random;
 public class rController {
 
     private final Random random = new Random();
-
-    private int getRandomId() {
-        return random.nextInt(848484);
-    }
-
-    public File crateImgFile(String fileName) {
-        File file = new File("img/" + fileName);
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return file;
-    }
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public ResponseEntity<?> upload(HttpServletRequest request) {

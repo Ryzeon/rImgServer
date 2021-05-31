@@ -23,7 +23,6 @@ public class rIndexController {
      */
     @GetMapping("/")
     public String index(Model model) {
-        rImgServer.logger("INDEX P");
         model.addAttribute("pageTitle", Lang.TITLE.getValue());
         model.addAttribute("description", Lang.DESCRIPTION.getValue());
         model.addAttribute("color", Lang.COLOR.getValue());
