@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 
 @Controller
-public class rController {
+public class ServerIndexController {
 
     @GetMapping("/")
     public String index() {
