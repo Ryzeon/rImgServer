@@ -18,6 +18,6 @@ public class rController {
     @GetMapping("/")
     public String index() {
         rImgServer.logger("INDEX P");
-        return "index";
+        return "index.html";
     }
 }
