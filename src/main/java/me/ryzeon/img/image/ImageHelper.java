@@ -2,6 +2,7 @@ package me.ryzeon.img.image;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.Random;
 
 /**
@@ -18,7 +19,7 @@ public class ImageHelper {
     private static final Random random = new Random();
 
     private static String path() {
-        
+        Path path = 
     }
 
     public static int getRandomId() {
