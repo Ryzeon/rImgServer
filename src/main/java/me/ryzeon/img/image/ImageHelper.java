@@ -38,7 +38,7 @@ public class ImageHelper {
     public static File crateImgFile(String fileName) {
         File dir = new File("img/");
         if (dir.exists()) {
-            dir.mkdir();
+            dir.mkdirs();
         }
         File file = new File("img/" + fileName);
         if (!file.exists()) {
