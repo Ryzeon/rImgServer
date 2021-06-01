@@ -22,7 +22,7 @@ public class ImageHelper {
     private static String path() {
         Path path = Paths.get(".");
         Path abosoultePath = path.toAbsolutePath();
-        return abosoultePath  + "/src/main/reources"
+        return abosoultePath  + "/src/main/resources/"
     }
 
     public static int getRandomId() {
