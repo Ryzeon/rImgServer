@@ -1,5 +1,7 @@
 package me.ryzeon.img.image;
 
+import org.springframework.util.StringUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
@@ -22,6 +24,8 @@ public class ImageHelper {
     }
 
     public static String getRelativePart(File file) {
+        String xd = StringUtils.cleanPath(file.getAbsolutePath());
+        System.out.println(xd);
         return "img/" + file.getName();
     }
 
