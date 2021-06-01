@@ -26,7 +26,7 @@ public class ImageHelper {
     public static String getRelativePart(File file) {
         String xd = StringUtils.cleanPath(file.getAbsolutePath());
         System.out.println(xd);
-        return xd;
+        return "/" + xd;
     }
 
     public static File findImageByName(String fileName) {
