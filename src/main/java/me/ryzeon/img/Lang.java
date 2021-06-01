@@ -16,7 +16,7 @@ public enum Lang {
     API_KEY("FNZ3vLRarM7HVmzrbQRwSDSGAAAAAAAAAAA"),
     TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
  //   DOMAIN("the-best-peruvian-is.ryzeon.me"),
-    DOMAIN("http://localhost:5656"),
+    DOMAIN("http://the-best-peruvian-is.ryzeon.me"),
     DESCRIPTION("#GAAAAA ARMY"),
     COLOR("#00FFAA"),
     PORT("5656");
