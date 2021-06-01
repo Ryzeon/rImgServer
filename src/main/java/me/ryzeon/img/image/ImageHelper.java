@@ -22,7 +22,9 @@ public class ImageHelper {
     private static String path() {
         Path path = Paths.get(".");
         Path abosoultePath = path.toAbsolutePath();
-        return abosoultePath  + "/src/main/resources/static/img/"
+        String xd = abosoultePath + "/src/main/resources/static/img";
+        System.out.println(xd);
+        return xd;
     }
 
     public static int getRandomId() {
@@ -30,7 +32,7 @@ public class ImageHelper {
     }
 
     public static File findImageByName(String fileName) {
-        File imagesFiles = new File("img/");
+        File imagesFiles = new File(path() + "/");
         for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
             if (!file.getName().contains(".png")) continue;
             String name = file.getName().replace(".png", "");
@@ -40,7 +42,7 @@ public class ImageHelper {
     }
 
     public static File crateImgFile(String fileName) {
-        File file = new File("img/" + fileName);
+        File file = new File(path() + "/" + fileName);
         if (!file.exists()) {
             try {
                 file.createNewFile();
