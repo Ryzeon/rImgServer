@@ -21,7 +21,8 @@ public class ImageHelper {
 
     private static String path() {
         Path path = Paths.get(".");
-        Path abosoultePath = path
+        Path abosoultePath = path.toAbsolutePath();
+        
     }
 
     public static int getRandomId() {
