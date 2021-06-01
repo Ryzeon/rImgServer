@@ -17,16 +17,21 @@ import java.util.Random;
 @SuppressWarnings("all")
 public class ImageHelper {
 
+    public static String getModifiPath(File file) {
+        return "/img/" + file.getName();
+    }
+
     private static final Random random = new Random();
 
     public static int getRandomId() {
         return random.nextInt(848484);
     }
 
-    public static String getRelativePart(File file) {
-        String xd = StringUtils.cleanPath(file.getAbsolutePath());
+    public static String getRelativePart() {
+        File imagesFiles = new File("img/");
+        String xd = StringUtils.cleanPath(imagesFiles.getAbsolutePath());
         System.out.println(xd);
-        return  xd;
+        return xd;
     }
 
     public static File findImageByName(String fileName) {
