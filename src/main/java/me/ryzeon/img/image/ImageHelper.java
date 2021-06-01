@@ -31,7 +31,7 @@ public class ImageHelper {
         File imagesFiles = new File("cache/");
         String xd = StringUtils.cleanPath(imagesFiles.getAbsolutePath());
         System.out.println(xd);
-        return xd;
+        return xd + "/";
     }
 
     public static File findImageByName(String fileName) {
