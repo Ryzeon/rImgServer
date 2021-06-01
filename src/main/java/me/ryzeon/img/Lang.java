@@ -19,7 +19,7 @@ public enum Lang {
     DOMAIN("http://the-best-peruvian-is.ryzeon.me"),
     DESCRIPTION("#GAAAAA ARMY"),
     COLOR("#00FFAA"),
-    PORT("5656");
+    PORT("7462");
 
     @Getter
     private final String value;
