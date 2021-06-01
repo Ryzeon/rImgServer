@@ -28,7 +28,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8d6367d1b9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/custom.css}" />
+    <style>
+        .ss-image,
+        .ss-image {
+            display: inline-block;
+            height: 100%;
+        }
+        .ss-image > img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            max-height: 100%;
+            margin: auto;
+        }
+        .ss-image {
+            display: inline;
+            height: auto;
+        }
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+    </style>
 </head>
 <body style="background-color: #121212;">
 <nav class="navbar navbar-dark bg-dark" aria-label="main navigation">
