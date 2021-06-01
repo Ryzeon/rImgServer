@@ -2,7 +2,6 @@ package me.ryzeon.img.image;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.Random;
 
 /**
@@ -20,6 +19,10 @@ public class ImageHelper {
 
     public static int getRandomId() {
         return random.nextInt(848484);
+    }
+
+    public static String getRelativePart(File file) {
+        
     }
 
     public static File findImageByName(String fileName) {
