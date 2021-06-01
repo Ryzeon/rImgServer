@@ -18,6 +18,10 @@ public class rConfigProvided implements WebMvcConfigurer {
 
     String myExternalFilePath = "file:" + ImageHelper.getRelativePart(); // end your path with a /
 
+    /**
+     *
+     * @apiNote  some shit to enable access {@link ImageHelper}
+     */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/cache/**").addResourceLocations(myExternalFilePath);
