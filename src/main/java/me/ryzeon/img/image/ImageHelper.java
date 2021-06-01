@@ -18,7 +18,7 @@ import java.util.Random;
 public class ImageHelper {
 
     public static String getModifiPath(File file) {
-        return "/img/" + file.getName();
+        return "/cache/" + file.getName();
     }
 
     private static final Random random = new Random();
@@ -28,14 +28,14 @@ public class ImageHelper {
     }
 
     public static String getRelativePart() {
-        File imagesFiles = new File("img/");
+        File imagesFiles = new File("cache/");
         String xd = StringUtils.cleanPath(imagesFiles.getAbsolutePath());
         System.out.println(xd);
         return xd;
     }
 
     public static File findImageByName(String fileName) {
-        File imagesFiles = new File("img/");
+        File imagesFiles = new File("cache/");
         for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
             if (!file.getName().contains(".png")) continue;
             String name = file.getName().replace(".png", "");
@@ -45,7 +45,7 @@ public class ImageHelper {
     }
 
     public static File crateImgFile(String fileName) {
-        File file = new File("img/" + fileName);
+        File file = new File("cache/" + fileName);
         if (!file.exists()) {
             try {
                 file.createNewFile();

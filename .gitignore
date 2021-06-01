@@ -1,11 +1,11 @@
 # User-specific stuff
 .idea/
 
-./img
+cache
 
-img/
+cache/
 
-img
+cache
 
 commiter.sh
 
