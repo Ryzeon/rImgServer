@@ -1,7 +1,6 @@
 package me.ryzeon.img.rest;
 
 import me.ryzeon.img.Lang;
-import me.ryzeon.img.rImgServer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
