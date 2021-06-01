@@ -22,7 +22,7 @@ public class ImageHelper {
     }
 
     public static String getRelativePart(File file) {
-        return "/img/" + file.getName();
+        return "img/" + file.getName();
     }
 
     public static File findImageByName(String fileName) {
