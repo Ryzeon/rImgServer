@@ -30,8 +30,6 @@ import static me.ryzeon.img.image.ImageHelper.getRandomId;
 @Controller
 public class rUploadImageController {
 
-    private final Random random = new Random();
-
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public ResponseEntity<?> upload(HttpServletRequest request) {
         String key = request.getHeader("key");
@@ -45,6 +43,9 @@ public class rUploadImageController {
             String fileName = request.getHeader("name").replace(".png", "");
             fileName = fileName + getRandomId() + ".png";
 
+            if (multipart == null) {
+                return new ResponseEntity<>("MultipartFile is null", HttpStatus.BAD_REQUEST);
+            }
             byte[] bytes = multipart.getBytes();
             BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(crateImgFile(fileName)));
             stream.write(bytes);
