@@ -1,0 +1,15 @@
+{
+  "Version": "13.5.0",
+  "Name": "rImgServer",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://VPSIP:PORT/upload",
+  "Headers": {
+    "key": "HERE-YOUR-JEY",
+    "name": "$filename$"
+  },
+  "Body": "MultipartFormData",
+  "FileFormName": "sharex",
+  "URL": "$response$",
+  "ErrorMessage": "$response$"
+}
