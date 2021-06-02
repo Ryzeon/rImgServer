@@ -21,7 +21,6 @@ public class rImgServer {
 
     }
 
-
     /**
      *
      * @param message {@link String}
