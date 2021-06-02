@@ -12,6 +12,9 @@
 * Compile: ```mv clean install```
 * Start: ```javar -jar [filename].jar```
 * Check if web works -> Go to website pasteurl `http://[vpsIp]:port`
+* Install on ShareX: 
+  * Edit rImageServer.sxcu
+  * Open File.
 
 
 # Contact:
