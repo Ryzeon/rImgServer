@@ -5,3 +5,8 @@
 
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
 
+# Contact:
+* Discord: Ryzeon#1111
+* <a href="https://twitter.com/ryzeon_">
+  <img align="left" alt="Ryzeon" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+</a>
