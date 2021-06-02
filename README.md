@@ -1,5 +1,5 @@
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://GitHub.com/Naereen/rImgServer)
-[![GitHub forks](https://img.shields.io/github/forks/Ryzeon/rImgServer?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Naereen/rImgServer/network/)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://GitHub.com/Ryzeon/rImgServer)
+[![GitHub forks](https://img.shields.io/github/forks/Ryzeon/rImgServer?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Ryzeon/rImgServer/network/)
 
 # rImageServer
 
