@@ -11,6 +11,8 @@
 * Edit Lang.java with your preferences
 * Compile: ```mv clean install```
 * Start: ```javar -jar [filename].jar```
+* Create a folder name "cache"
+<img src="http://ryzeon.me:7462/cache/ryzeon-skidder-v117-Chrysalis632048.png">
 * Check if web works -> Go to website pasteurl `http://[vpsIp]:port`
 * Install on ShareX: 
   * Edit rImageServer.sxcu
