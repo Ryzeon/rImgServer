@@ -1,6 +1,8 @@
 package me.ryzeon.img;
 
 import lombok.Getter;
+import lombok.val;
+import me.ryzeon.img.properties.PropertiesProvided;
 
 import java.beans.ConstructorProperties;
 
@@ -15,18 +17,24 @@ public enum Lang {
 
     API_KEY("FNZ3vLRarM7HVmzrbQRwSDSGAAAAAAAAAAA"),
     TITLE("Ryzeon's Private Image Server \uD83E\uDD75 \uD83E\uDD75"),
- //   DOMAIN("the-best-peruvian-is.ryzeon.me"),
     DOMAIN("http://the-best-peruvian-is.ryzeon.me"),
-    DESCRIPTION("#GAAAAA ARMY"),
+    DESCRIPTION("#GAAA Army"),
     COLOR("#00FFAA"),
-   // PORT("7462");
-    PORT("80");
+    PORT("7462");
 
     @Getter
-    private final String value;
+    private final String defaultValue;
 
-    @ConstructorProperties({"value"})
-    Lang(String value) {
-        this.value = value;
+    /**
+     * 
+     * @return a {@link String} provided by {@link Properties}
+     */
+    public String getValue() {
+        return PropertiesProvided.getValue(this.name().toLowerCase());
+    }
+
+    @ConstructorProperties({"defaultValue"})
+    Lang(String defaultValue) {
+        this.defaultValue = defaultValue;
     }
 }
