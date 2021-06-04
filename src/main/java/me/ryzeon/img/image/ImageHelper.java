@@ -53,7 +53,7 @@ public class ImageHelper {
     }
 
     public static File crateImgFile(String fileName) {
-        checkCacheFolder()
+        checkCacheFolder();
         File file = new File("cache/" + fileName);
         if (!file.exists()) {
             try {
