@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.util.Iterator;
-import java.util.Random;
 
 import static me.ryzeon.img.image.ImageHelper.crateImgFile;
 import static me.ryzeon.img.image.ImageHelper.getRandomId;
@@ -40,12 +39,16 @@ public class rUploadImageController {
             MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
             Iterator<String> it = multipartRequest.getFileNames();
             MultipartFile multipart = multipartRequest.getFile(it.next());
-            String fileName = request.getHeader("name").replace(".png", "");
-            fileName = fileName + getRandomId() + ".png";
-
             if (multipart == null) {
                 return new ResponseEntity<>("MultipartFile is null", HttpStatus.BAD_REQUEST);
             }
+
+            long fileSize = (long) (multipart.getSize() * 0.00000095367432);
+            if (fileSize > 30.75) { // Here max file size, in this case 30MB
+                return new ResponseEntity<>("Max File Size Reached", HttpStatus.BAD_REQUEST);
+            }
+            String fileName = request.getHeader("name").replace(".png", "");
+            fileName = fileName + getRandomId() + ".png";
             byte[] bytes = multipart.getBytes();
             BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(crateImgFile(fileName)));
             stream.write(bytes);
