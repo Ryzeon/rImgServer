@@ -40,6 +40,7 @@ public class ImageHelper {
     }
 
     public static File findImageByName(String fileName) {
+        checkCacheFolder();
         File imagesFiles = new File("cache/");
         for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
             if (!file.getName().contains(".png"))
@@ -52,6 +53,7 @@ public class ImageHelper {
     }
 
     public static File crateImgFile(String fileName) {
+        checkCacheFolder()
         File file = new File("cache/" + fileName);
         if (!file.exists()) {
             try {
