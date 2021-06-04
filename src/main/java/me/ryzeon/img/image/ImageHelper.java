@@ -7,15 +7,21 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
- * Created by Ryzeon
- * Project: rImgServer
- * Date: 31/05/2021 @ 15:01
- * Twitter: @Ryzeon_ 😎
- * Github:  github.ryzeon.me
+ * Created by Ryzeon Project: rImgServer Date: 31/05/2021 @ 15:01
+ * Twitter: @Ryzeon_ 😎 Github: github.ryzeon.me
  */
 
 @SuppressWarnings("all")
 public class ImageHelper {
+
+    public static boolean checkCacheFolder() {
+        File cacheFolder = new File("cache/");
+        if (!cacheFolder.exists()) {
+            cacheFolder.mkdirs();
+            return false;
+        }
+        return true;
+    }
 
     public static String getModifiPath(File file) {
         return "/cache/" + file.getName();
@@ -36,9 +42,11 @@ public class ImageHelper {
     public static File findImageByName(String fileName) {
         File imagesFiles = new File("cache/");
         for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
-            if (!file.getName().contains(".png")) continue;
+            if (!file.getName().contains(".png"))
+                continue;
             String name = file.getName().replace(".png", "");
-            if (name.equals(fileName)) return file;
+            if (name.equals(fileName))
+                return file;
         }
         return null;
     }

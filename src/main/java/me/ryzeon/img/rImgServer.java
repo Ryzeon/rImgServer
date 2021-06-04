@@ -2,6 +2,8 @@ package me.ryzeon.img;
 
 import java.io.File;
 
+import me.ryzeon.img.image.ImageHelper;
+
 /**
  * Created by Ryzeon Project: rImgServer Date: 31/05/2021 @ 12:42
  * Twitter: @Ryzeon_ 😎 Github: github.ryzeon.me
@@ -17,11 +19,9 @@ public class rImgServer {
 
     @Deprecated
     public void start() {
-        logger("Checking if /cache/ folder exits!");
-        File cacheFolder = new File("cache/");
-        if (!cacheFolder.exists()) {
+        logger("Checking if cache/ folder exits!");
+        if (!ImageHelper.checkCacheFolder()) {
             logger("Cache folder doesn't exits, creating cache folder...");
-            cacheFolder.mkdirs();
         }
     }
 
