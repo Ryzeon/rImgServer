@@ -23,7 +23,7 @@ public class Start {
         System.getProperties().put("server.port", Lang.PORT.getValue());
         SpringApplication.run(Start.class, args);
 
-        rImgServer.getInstance().start();
-        rImgServer.logger("Img Server started on http://localhost:" + Lang.PORT.getValue());
+        ImgServer.getInstance().start();
+        ImgServer.logger("Img Server started on http://localhost:" + Lang.PORT.getValue());
     }
 }

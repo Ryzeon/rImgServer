@@ -14,6 +14,8 @@ import java.util.Random;
 @SuppressWarnings("all")
 public class ImageHelper {
 
+    private static final Random random = new Random();
+
     public static boolean checkCacheFolder() {
         File cacheFolder = new File("cache/");
         if (!cacheFolder.exists()) {
@@ -26,8 +28,6 @@ public class ImageHelper {
     public static String getModifiPath(File file) {
         return "/cache/" + file.getName();
     }
-
-    private static final Random random = new Random();
 
     public static int getRandomId() {
         return random.nextInt(848484);
@@ -52,7 +52,7 @@ public class ImageHelper {
         return null;
     }
 
-    public static File crateImgFile(String fileName) {
+    public static File createImgFile(String fileName) {
         checkCacheFolder();
         File file = new File("cache/" + fileName);
         if (!file.exists()) {
