@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 
 @Controller
-public class rIndexController {
+public class IndexController {
 
     /**
      * @param model set a variables to can be use html template

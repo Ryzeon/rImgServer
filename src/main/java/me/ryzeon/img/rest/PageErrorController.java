@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-public class rPageErrorController implements ErrorController {
+public class PageErrorController implements ErrorController {
 
     @RequestMapping("/404")
     public String handleError() {

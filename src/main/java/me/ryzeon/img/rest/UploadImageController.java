@@ -14,20 +14,16 @@ import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.util.Iterator;
 
-import static me.ryzeon.img.image.ImageHelper.crateImgFile;
+import static me.ryzeon.img.image.ImageHelper.createImgFile;
 import static me.ryzeon.img.image.ImageHelper.getRandomId;
 
-
 /**
- * Created by Ryzeon
- * Project: rImgServer
- * Date: 31/05/2021 @ 12:49
- * Twitter: @Ryzeon_ 😎
- * Github:  github.ryzeon.me
+ * Created by Ryzeon Project: rImgServer Date: 31/05/2021 @ 12:49
+ * Twitter: @Ryzeon_ 😎 Github: github.ryzeon.me
  */
 
 @Controller
-public class rUploadImageController {
+public class UploadImageController {
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public ResponseEntity<?> upload(HttpServletRequest request) {
@@ -50,9 +46,13 @@ public class rUploadImageController {
             String fileName = request.getHeader("name").replace(".png", "");
             fileName = fileName + getRandomId() + ".png";
             byte[] bytes = multipart.getBytes();
-            BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(crateImgFile(fileName)));
-            stream.write(bytes);
-            stream.close();
+
+            try (BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(createImgFile(fileName)))) {
+                stream.write(bytes);
+            } catch (Exception e) {
+                return new ResponseEntity<>("Error to upload file", HttpStatus.BAD_REQUEST);
+            }
+
             String url = Lang.DOMAIN.getValue() + "/img/" + fileName.replace(".png", "");
             return new ResponseEntity<>(url, HttpStatus.OK);
 

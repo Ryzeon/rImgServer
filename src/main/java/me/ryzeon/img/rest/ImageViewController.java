@@ -18,7 +18,7 @@ import java.io.File;
  */
 
 @Controller
-public class rImageViewController {
+public class ImageViewController {
 
     @GetMapping("/img/{imageName}")
     public String rImageViewer(@PathVariable String imageName, Model model) {

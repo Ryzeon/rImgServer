@@ -1,7 +1,5 @@
 package me.ryzeon.img;
 
-import java.io.File;
-
 import me.ryzeon.img.image.ImageHelper;
 
 /**
@@ -9,11 +7,11 @@ import me.ryzeon.img.image.ImageHelper;
  * Twitter: @Ryzeon_ 😎 Github: github.ryzeon.me
  */
 
-public class rImgServer {
+public class ImgServer {
 
-    private static rImgServer instance;
+    private static ImgServer instance;
 
-    public rImgServer() {
+    public ImgServer() {
         instance = this;
     }
 
@@ -34,9 +32,9 @@ public class rImgServer {
         System.out.println("[rImgServer] " + message);
     }
 
-    public static rImgServer getInstance() {
+    public static ImgServer getInstance() {
         if (instance == null)
-            new rImgServer();
+            new ImgServer();
 
         return instance;
     }

@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 
 @Configuration
-public class rConfigProvided implements WebMvcConfigurer {
+public class ConfigProvided implements WebMvcConfigurer {
 
     String myExternalFilePath = "file:" + ImageHelper.getRelativePart(); // end your path with a /
 
