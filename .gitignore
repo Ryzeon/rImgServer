@@ -13,6 +13,8 @@ cache/
 
 cache
 
+imageserver.properties
+
 commiter.sh
 
 *.iml
