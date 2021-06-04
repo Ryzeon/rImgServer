@@ -3,6 +3,8 @@ package me.ryzeon.img;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import me.ryzeon.img.properties.PropertiesProvided;
+
 /**
  * Created by Ryzeon
  * Project: rImgServer
@@ -20,6 +22,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Start {
 
     public static void main(String[] args) {
+        PropertiesProvided.init();
         System.getProperties().put("server.port", Lang.PORT.getValue());
         SpringApplication.run(Start.class, args);
 
