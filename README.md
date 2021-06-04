@@ -7,6 +7,16 @@
 
 # How to use:
 
+Normal Instalation:
+* Download .jar
+* Start: ```javar -jar [filename].jar```
+* Edit: imageserver.propierties
+* Check if web works -> Go to website pasteurl `http://[vpsIp]:port`
+* Install on ShareX: 
+  * Edit rImageServer.sxcu
+  * Open File.
+
+If u want edit code:
 * Clone repo ```git clone https://github.com/Ryzeon/rImgServer.git```
 * Edit Lang.java with your preferences
 * Compile: ```mv clean install```
