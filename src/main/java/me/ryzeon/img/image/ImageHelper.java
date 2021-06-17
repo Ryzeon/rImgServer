@@ -41,14 +41,8 @@ public class ImageHelper {
 
     public static File findImageByName(String fileName) {
         checkCacheFolder();
-        File imagesFiles = new File("cache/");
-        for (File file : imagesFiles.getAbsoluteFile().listFiles()) {
-            if (!file.getName().contains(".png"))
-                continue;
-            String name = file.getName().replace(".png", "");
-            if (name.equals(fileName))
-                return file;
-        }
+        File file = new File("cache/" + fileName + ".png");
+        if (file.exists()) return file;
         return null;
     }
 
