@@ -19,7 +19,7 @@ Normal Instalation:
 If u want edit code:
 * Clone repo ```git clone https://github.com/Ryzeon/rImgServer.git```
 * Edit Lang.java with your preferences
-* Compile: ```mv clean install```
+* Compile: ```mvn clean install```
 * Start: ```javar -jar [filename].jar```
 * Check if web works -> Go to website pasteurl `http://[vpsIp]:port`
 * Install on ShareX: 
