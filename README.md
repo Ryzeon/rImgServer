@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b41f94e5e4e44681a04536d964f14dd0)](https://app.codacy.com/gh/Ryzeon/rImgServer?utm_source=github.com&utm_medium=referral&utm_content=Ryzeon/rImgServer&utm_campaign=Badge_Grade_Settings)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://GitHub.com/Ryzeon/rImgServer)
 [![GitHub forks](https://img.shields.io/github/forks/Ryzeon/rImgServer?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Ryzeon/rImgServer/network/)
 
