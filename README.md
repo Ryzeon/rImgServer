@@ -29,7 +29,7 @@ If u want edit code:
 
 
 # Contact:
-* Discord: Ryzeon#1111
+* Discord: Ryzeon#5050
 * <a href="https://twitter.com/ryzeon_">
   <img align="left" alt="Ryzeon" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
 </a>
