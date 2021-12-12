@@ -9,11 +9,7 @@ import me.ryzeon.img.image.ImageHelper;
 
 public class ImgServer {
 
-    private static ImgServer instance;
-
-    public ImgServer() {
-        instance = this;
-    }
+    private static final ImgServer instance = new ImgServer();
 
     @Deprecated
     public void start() {
@@ -33,9 +29,6 @@ public class ImgServer {
     }
 
     public static ImgServer getInstance() {
-        if (instance == null)
-            new ImgServer();
-
         return instance;
     }
 }
